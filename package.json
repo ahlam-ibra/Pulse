@@ -1,0 +1,24 @@
+{
+  "name": "pulse",
+  "version": "1.0.0",
+  "description": "real-time price alerting platform",
+  "homepage": "https://github.com/ahlam-ibra/Pulse#readme",
+  "bugs": {
+    "url": "https://github.com/ahlam-ibra/Pulse/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahlam-ibra/Pulse.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "produce": "node --env-file=.env price-producer.js",
+    "consume": "node --env-file=.env price-consumer.js"
+  },
+  "dependencies": {
+    "amqplib": "^2.2.0"
+  }
+}
